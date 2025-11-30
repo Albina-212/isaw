@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nobile:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISaw_все_туры</title>
+    <link rel="stylesheet"  type="text/css" href="css/styles.css">
+</head>
+
+
+<body class="body-vseturi">
+    <div >
+        <header class="header-vseturi">
+                <h1 class="zagolovok-vseturi">ВСЕ ТУРЫ</h1>
+        
+
+        <div class="dropdown1">
+            <img src="img/logo_bag.svg" class="nav_link" href="vse_turi.html" alt="Меню" id="dropdown-toggle">
+            <div class="dropdown-content1" id="dropdown-menu"  onmouseover="showMenu();">
+                <a class="nav_link1" href="index.html">Главная</a>
+                <a class="nav_link1" href="otzivi.html">Отзывы</a>
+                <a class="nav_link1" href="foto.html">Фото</a>
+                <a class="nav_link1" href="#">Контакты</a>
+            </div>
+        </div>
+        </header>
+        
+
+        <!---Images+Button--->
+        <div class="infa-vseturi">
+            <div class="group">
+
+                <div class="para">
+                    <img class="foto-vseturi" src="img/arktika.jpg">
+                    <video id="video" src="img/arktika.mp4" autoplay loop muted></video>
+                    <a href="#"  class="btn" id="btn1-vseturi">Арктика</a>
+                </div>
+
+                <div class="para">
+                    <img class="foto-vseturi" src="img/elbrus.jpg">
+                    <video id="video" src="img/elbrus.mp4" autoplay loop muted></video>
+                    <a href="#"  class="btn" id="btn2-vseturi">Эльбрус</a>
+                </div>
+            </div>
+
+            <div class="group">
+
+                <div class="para">
+                    <img class="foto-vseturi" src="img/turciya.jpg">
+                    <video id="video" src="img/turciya.mp4" autoplay loop muted></video>
+                    <a href="#" class="btn" id="btn3-vseturi">Турция</a>
+                </div>
+
+                <div class="para">
+                    <img class="foto-vseturi" src="img/greece.jpg">
+                    <video id="video" src="img/greece.mp4" autoplay loop muted></video>
+                    <a href="#" class="btn" id="btn4-vseturi">Греция</a>
+                </div>
+            </div>
+
+            
+            <div class="group">
+
+                <div class="para">
+                    <img class="foto-vseturi" src="img/sochi.jpg">
+                    <video id="video" src="img/sochi.mp4" autoplay loop muted></video>
+                    <a href="#"  class="btn" id="btn5-vseturi">Сочи</a>
+                </div>
+
+                <div class="para">
+                    <img class="foto-vseturi" src="img/dubai.jpg">
+                    <video id="video" src="img/dubai.mp4" autoplay loop muted></video>
+                    <a href="#" class="btn"  id="btn6-vseturi">Дубай</a>
+                </div>
+            </div>
+            
+        <!---Цены-->
+        <div class="Price">
+            <div class="table_price">
+                <h1>Цены на поездки</h1>
+                <table>
+                    <tr>
+                        <th>Тип поездки</th>
+                        <th>Продолжительность</th>
+                        <th>Цена</th>
+                    </tr>
+                    <tr>
+                        <td>Экскурсия</td>
+                        <td>3 дня</td>
+                        <td>от 3000 р.</td>
+                    </tr>
+                    <tr>
+                        <td>Поход</td>
+                        <td>7 дней</td>
+                        <td>от 5000 р.</td>
+                    </tr>
+                    <tr>
+                        <td>Круиз</td>
+                        <td>10 дней</td>
+                        <td>от 40000 р.</td>
+                    </tr>
+                    <tr>
+                        <td>Тур выходного дня</td>
+                        <td>2 дня</td>
+                        <td>от 5000 р.</td>
+                    </tr>
+                </table>
+                <h2>Цены на <span id="today"></span></h2>
+
+            </div>
+        </div>
+        
+
+                <!---Back-->
+            <div class="logo-vseturi">
+                <a href="index.html"><img src="img/logo_dark.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Всплывающая форма -->
+    <div class="modal" id="form-modal">
+        <div class="modal-content">
+        <form id="registration-form">
+            <h3>Заполните форму:</h3>
+            <label for="first-name">Имя:</label>
+            <input type="text" id="first-name" required>
+
+            <label for="phone-number">Телефон:</label>
+            <input type="tel" id="phone-number" placeholder="8(___)___-__-__" >
+
+            <label for="e-mail">Email:</label>
+            <input type="text" id="e-mail" required>
+
+            <button type="submit" id="ok-button">Ок</button>
+        </form>
+        </div>
+    </div>
+
+    <!-- Подтверждающая форма -->
+    <div class="modal" id="success-modal">
+        <div class="modal-content">
+        <h3>Ваша заявка принята!</h3>
+        <p>В ближайшее время с вами свяжется наш менеджер ❤</p>
+        <button type="button" id="super-button">Супер</button>
+        </div>
+    </div>
+    
+    <script>
+        const today = new Date().toLocaleDateString();
+        document.getElementById("today").innerHTML = today;
+    </script>
+
+    <script src="js/anim_vseturi_0.js"></script>
+
+</body>
+</html>

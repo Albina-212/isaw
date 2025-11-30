@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nobile:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaw</title>
+    <link rel="stylesheet"  type="text/css" href="css/styles.css">
+</head>
+
+
+<body id="body-glavnaya">
+    <div class="body-gl">
+
+        <div class="start_anim">
+            <img id="image_start" src="img/logo_bag.svg" alt="">
+            <h1 id="text_start">ISaw</p>
+        </div>
+        <div id="first_pageee">
+            <header class="header-glavnaya">
+                <div class="container">
+                    <div class="header__inner">
+                        <div class="header__logo">
+                            <img src="img/logo_bag.svg" alt="">
+                        </div>
+        
+                        <div id="fp1">
+                            <nav class="nav">
+                                <div class="dropdown">
+                                    <a class="nav_link" href="vse_turi.html" alt="Меню" id="dropdown-toggle">Все туры</a>
+                                    <div class="dropdown-content" id="dropdown-menu"  onmouseover="showMenu();">
+                                      <a class="dr-text" href="#">Арктика</a>
+                                      <a class="dr-text" href="#">Эльбрус</a>
+                                      <a class="dr-text" href="#">Турция</a>
+                                      <a class="dr-text" href="#">Греция</a>
+                                      <a class="dr-text" href="#">Сочи</a>
+                                      <a class="dr-text" href="#">Дубай</a>
+                                    </div>
+                                </div>
+                                
+                                <a class="nav_link" href="otzivi.html">Отзывы</a>
+                                <a class="nav_link" href="foto.html">Фото</a>
+                                <a class="nav_link" href="#">Контакты</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        
+            <!---Intro-->
+            <div class="intro">
+                <div class="container">
+                    <div class="intro__inner">
+                        <div id="fp2">
+                            <h1 class="intro__title">Может в горы?</h1>
+                            <h2 class="intro__subtitle">
+                                Авторские туры <br>
+                                в любую точку мира с командой ISaw
+                            </h2>
+                            <a href="vse_turi.html" class="btn  btn--green">Выбрать маршрут</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="plusi">
+            <h1 class="mini_title">С нами ты получишь:</h1>
+            <div class="advantages">
+                <div class="advantage">
+                    <div class="number">1</div>
+                    <div class="description">Новые впечатления</div>
+                </div>
+        
+                <div class="advantage">
+                    <div class="number">2</div>
+                    <div class="description">Улучшение здоровья</div>
+                </div>
+                
+                <div class="advantage">
+                    <div class="number">3</div>
+                    <div class="description">Развитие личности</div>
+                </div>
+                
+                <div class="advantage">
+                    <div class="number">4</div>
+                    <div class="description">Укрепление отношений</div>
+                </div>
+        
+                <div class="advantage">
+                    <div class="number">5</div>
+                    <div class="description">Самопознание</div>
+                </div>
+
+            </div>
+        </div>
+    
+        <div class="part3">
+            <div class="video">
+                <video class="video__media" src="img/travels.mp4" autoplay muted loop></video>
+            </div>
+    
+            <div class="video_content">
+                <div class="video_container">
+                    <h1 class="middle_title">Посмотри этот мир вместе с ISaw</h1>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer">
+            <table class="table_f" width="100%" border="0">
+                <tr>
+                    <td width="30%"  class="text_t">
+                        <h2>Контакты</h2>
+                        <ul>
+                            <li><a class="text_t" href="#">Email</a></li>
+                            <li><a class="text_t" href="#">Телефон</a></li>
+                            <li><a class="text_t" href="#">Социальные сети</a></li>
+                        </ul>
+
+                    </td>
+                    <td width="25%"  class="text_t">
+                        <img id="k1" src="img/world.png">
+
+                    </td>
+
+                    <td width="50%" class="text_t">
+                        <h2>Подписка</h2>
+                        <p >Подписывайтесь на наши соц.сети, чтобы первыми узнавать об обновлениях и специальных предложениях.</p>
+                        <div class="f_link">
+                            <p id="text1">vk: @ISaw_live</p>
+                            <p id="text2"> RuTube: @ISaw</p>
+                        </div>
+    
+                    </td>
+                </tr>
+                </table>
+        </div>
+    </div>
+
+    <script>
+    setTimeout(function() {
+      document.getElementById("fp1").style.opacity = 1;
+      document.getElementById("fp2").style.opacity = 1;
+
+    }, 2500);
+
+    const dropdownToggle = document.getElementById('dropdown-toggle');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+
+    dropdownToggle.addEventListener('click', () => {
+    dropdownMenu.classList.toggle('show');
+    });
+    </script>
+
+    <script src="js/anim.js"></script>
+
+
+</body>
+
+
+</html>
