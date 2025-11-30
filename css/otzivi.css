@@ -1,0 +1,74 @@
+.body-otzivi{
+	margin: 0;
+	font-family: 'Montserrat';
+	font-size: 14px;
+	color: black;
+	background-color: #fff;
+	background-image: url("krivie2.png");
+
+}
+
+
+.infa-otzivi {
+	display: flex;
+	flex-direction: column; /*каждый новый
+	элемент будет с новой строки*/
+	justify-content: center;
+}
+
+/* Отзыв------------------------*/
+.otziv {
+	display: flex;
+	margin-top: 40px;
+	margin-left: 40px;
+}
+
+.foto-otzivi {
+	display: block;
+	align-items: left;
+}
+
+.foto-otzivi img {
+	border-radius: 230px;
+}
+
+.text {
+	display: block;
+	align-items: center;
+	margin-left: 50px;
+}
+
+.t_otziv {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 20px;
+	color: #fff;
+	font-weight: 200;/*жирность текста*/
+	text-decoration: none;
+	font-family: inherit;
+	border: 0;
+	padding: 50px 50px;
+
+	border-radius: 35px;
+	background-color: #334142;
+
+	margin-right: 50px;
+	align-items: center;
+	margin-left: 0px;
+}
+
+.zagolovok-otzivi {
+	font-family: "Montserrat";
+	font-style: bold;
+	font-size: 70px;
+	color: #343434;
+	text-align: center;
+
+	margin-top: 20px;
+
+}
+
+
+.logo-otzivi {
+	margin: auto;
+}

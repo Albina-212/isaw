@@ -1,0 +1,44 @@
+.body-foto{
+	margin: 0;
+	font-family: 'Montserrat';
+	font-size: 14px;
+	color: black;
+	background-color: #DFE68E;
+	background-image: url("krivie3.png");
+}
+
+.line-foto {
+	display: flex;
+	align-items: center;
+	margin-top: 60px;
+	margin-left: 80px;
+}
+
+.line-foto img {
+	border-radius: 38px;
+	margin-right: 20px;
+}
+
+.zagolovok-foto {
+	font-family: "Montserrat";
+	font-style: bold;
+	font-size: 70px;
+	color: #343434;
+	text-align: center;
+
+	margin-top: 20px;
+}
+
+.infa-foto {
+	display: flex;
+	flex-direction: column; /*каждый новый
+	элемент будет с новой строки*/
+	justify-content: center;
+}
+
+.logo-foto {
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}

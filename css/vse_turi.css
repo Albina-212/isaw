@@ -1,0 +1,121 @@
+.body-vseturi{
+	margin: 0;
+	font-family: 'Montserrat';
+	font-size: 14px;
+	color: black;
+	background-color: #B0E53F;
+	background-image: url("krivie.png");
+
+}
+
+
+.foto-vseturi {
+	display: block;
+	align-items: center;
+	border-radius: 100px;
+}
+
+.zagolovok-vseturi {
+	font-family: "Montserrat";
+	font-style: bold;
+	font-size: 70px;
+	color: #343434;
+	text-align: center;
+	margin-bottom: 15px;
+
+}
+
+.infa-vseturi {
+	display: flex;
+	flex-direction: column; /*каждый новый
+	элемент будет с новой строки*/
+	align-items: center;
+	text-align: center;
+}
+
+.btn-vseturi {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 25px;
+	color: #fff;
+	font-weight: 600;/*жирность текста*/
+	text-decoration: none;
+	font-family: inherit;
+	border: 0;
+	padding: 14px 100px;
+
+	border-radius: 35px;
+	transition: all 0.15s linear;
+	background-color: #334142;
+
+	align-items: center;
+	margin-top: 20px;
+}
+
+.btn-vseturi:hover {
+	background-color: #FFEF63;
+	color: #334142;
+}
+
+.logo-vseturi {
+	margin: auto;
+}
+
+.para{
+	display: inline;
+	text-align: center;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.group {
+	justify-content: space-around;
+	align-items: center;
+	display: flex;
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+	border-radius: 10px;
+	text-align: center;
+}
+
+table {
+	border-collapse: collapse;
+	align-items: center;
+}
+
+th, td {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+	font-size: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+}
+
+tr:hover {
+	background-color: #f5f5f5;
+}
+
+.table_price{
+	align-items: center;
+	text-align: center;
+	font-family: Arial, sans-serif;
+	color:  #334142;
+
+}
+
+.table_price h1{
+	padding-bottom: 50px;
+	padding-top: 20px;
+}
+
+.Price{
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+.Price h1{
+	font-size: 60px;
+}
